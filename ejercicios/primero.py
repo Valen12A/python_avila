@@ -1,5 +1,9 @@
-numero = int (input("ingrese bun numero"))
-
-for i in range (1, 100 +1): 
-    if numero %  i ==0:
-        print("el numero ", i , "es divisor de",numero  )
+numero = int (input("ingrese bun numero: "))
+i=0
+while True:
+    i+=1
+    if numero % i ==0:
+        print(f"El numero {i} es divisor de {numero}")
+        
+    if numero==i:
+        break

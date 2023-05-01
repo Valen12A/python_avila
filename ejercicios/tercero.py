@@ -8,6 +8,8 @@ for i in range (1,numero + 1):
         
 resta = suma -numero
 if resta == numero:
-    print("el numero es perfecto")  
-        
+    print(f"el numero {numero} es perfecto") 
+else:
+    print(f"El numero {numero} no es perfecto")
+
  
