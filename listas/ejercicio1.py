@@ -46,12 +46,18 @@ for num in lista:
 print ("La moda es: ", moda )
 
 
-
 for i in lista:
-    resta = i - (suma/cont)
-    cuadrado = resta (math.pow(2))
+    resta = i - (suma) / (cont)
+    cuadrado = 2 * 2
     suma += cuadrado
-    division = suma / cont
+    division = suma / prom
 raiz = math.sqrt(division)
 print ( "La desviacion estandara es:", raiz)
 
+
+for i in range(tam-1):
+    for j in range(i+1,tam):
+        if lista[i]>lista[j]:
+            lista[i],lista[j]=lista[j],lista[i]
+
+print(lista)
