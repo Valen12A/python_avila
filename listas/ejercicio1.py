@@ -35,14 +35,14 @@ print ("el numero menor es:", menor)
 
 
 max = 0
-for numAct in lista:
+for num in lista:
     cont = 0
     for s in lista:
-        if numAct == s:
+        if num == s:
             cont +=1
     if cont > max:
         max = cont 
-        moda =numAct
+        moda =num
 print ("La moda es: ", moda )
 
 
