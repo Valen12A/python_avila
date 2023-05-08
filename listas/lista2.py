@@ -1,10 +1,29 @@
-lista=[]                      #se crea una lista vacia
-lista.append(100)
-lista.append(50)
-lista.append(-100)            #append es una funcion que permite agregar elementos al final de la lista
-lista.append(20)
-lista.append(5)
+import random
 
-print(lista)
-lista.insert(-2,'prueba')    #insert permite agregar elementos en un indice especfifico de la lista
-print(lista)
+n= int(input("cuantos elementos desea en la lista?"))
+lista=[]
+
+#llenar la lista co numeros aleatorios 
+for i in range(n):
+    lista.append(random.randint(1,100))
+
+print("la lista generada es:", lista)
+
+#calcular la suma de los numeros pares y el promedio de los numeros impares
+suma_pares=0
+numeros_impares=[]
+suma_impares=0
+for numero in lista:
+    if numero % 2 ==0:
+        suma_pares +=numero
+    else:
+        numeros_impares.append(numero)
+        suma_impares +=numero
+
+if len(numeros_impares) == 0:
+    promedio_impares =0
+else:
+    promedio_impares = suma_impares / len(numeros_impares)
+
+print("La suma de los numeros pares es:", suma_pares)
+print("El promedio de los numeros impares es:", promedio_impares)
