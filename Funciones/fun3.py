@@ -54,12 +54,6 @@ def quintil(lista):
 
 print(quintil(listaGeneral))
 
-sumcuartil = 0
 
-def sumaCuartil(listacuartil, cuartil):
-        sum=0
-        for x in cuartil:
-            sum+=x
-        return sum
         
 print (sum)
