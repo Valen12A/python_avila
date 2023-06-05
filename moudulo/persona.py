@@ -20,14 +20,14 @@ class persona:
 p= persona("ana", 123)
 print(p.getNombre())
 
-q= persona ("pedro", 321)
-print(q.getNombre())
+#q= persona ("pedro", 321)
+#print(q.getNombre())
 
 p= persona("ana", 123)
 print(p.getDocumento())
 
-q= persona ("pedro", 321)
-print(q.getDocumento())
+#q= persona ("pedro", 321)
+#print(q.getDocumento())
 
 
 

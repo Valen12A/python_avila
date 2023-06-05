@@ -36,10 +36,10 @@ class Cursos:
             print(f'La posicion {posicion} no existe. ')
 
 p = Cursos()
-
 #Agregar un curso.
 p.agregarCurso('Matematicas')
 print(p.getCursos())
+
 
 #Eliminar un curso.
 p.eliminarCurso('Matematicas')
