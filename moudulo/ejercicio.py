@@ -25,7 +25,7 @@ class Cursos:
 
     def buscarCurso(self, curso):
         if curso in self.__curso:
-            print(f'El curso {curso} si está en la lista.')
+            print(f'El curso {curso} está en la lista.')
         else:
             print(f'El curso {curso} no está en la lista.')
 
