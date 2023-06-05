@@ -1,38 +1,19 @@
-class persona:
-    def __init__ (self, nombre, documento,):
-        self.__nombre =nombre 
-        self.__documento=documento
-        self.__curso  = []
-    
-    def getNombre(self):
-        return self.__nombre
-    def setNombre (self, nombre):
-        self.__nombre= nombre
-    
-    def getDocumento(self):
-        return self.__documento
-    def setDocumento (self, documento):
-        self.__documento= documento
-        
-    def añadirCursos(self, curso):
-        self.__curso += [curso]
+class Cursos:
+    def __init__(self):
+        self.__curso = []
+
+    def agregarCurso(self, curso):
+        self.__curso.append(curso)
+
     def getCursos(self):
         return self.__curso
-    
-    def buscarCurso(self, curso):
+
+    def eliminarCurso(self, curso):
         if curso in self.__curso:
-            return ("El curso si esta en la lista.")
+            self.__curso.remove(curso)
         else:
-            return ("El curso no esta en la lista de cursos.")
-    
-    def eliminarCurso(self, Curso):
-        if Curso in self.__curso:
-            self.__curso.remove(Curso)
-            return ("El curso fue eliminado")
-        else:
-            return ("El curso no se puede eliminar ya que no esta en la lista.")
-        
-        
+            print('El curso no está en la lista.')
+
     def modificarCurso(self, curso, n_curso):
         Cont = 0
         for x in range(len(self.__curso)):
@@ -41,26 +22,38 @@ class persona:
                 self.__curso[Cont-1] = n_curso
             if self.__curso[x] == self.__curso[-1]:
                 self.__curso[-1] = n_curso
-    
-p= persona("ana", 123)
-print(p.getNombre())
 
-p= persona("ana", 123)
-print(p.getDocumento())
+    def buscarCurso(self, curso):
+        if curso in self.__curso:
+            print(f'El curso {curso} si está en la lista.')
+        else:
+            print(f'El curso {curso} no está en la lista.')
 
-q= persona ("pedro", 321)
-print(q.getNombre())
+    def consultarCurso(self, posicion):
+        if 0 <= posicion < len(self.__curso):
+            print(f'En la posicion {posicion} esta el curso {self.__curso}')
+        else:
+            print(f'La posicion {posicion} no existe. ')
 
+p = Cursos()
 
-q= persona ("pedro", 321)
-print(q.getDocumento())
- 
-p.añadir.Curso("matematicas")
-p.añadir.Curso("sociales")
-p.añadir.Curso("ingles")
-p.añadir.Curso("biologia")
+#Agregar un curso.
+p.agregarCurso('Matematicas')
+print(p.getCursos())
 
-print(p.anadirCuso())
+#Eliminar un curso.
+p.eliminarCurso('Matematicas')
+print(p.getCursos())
 
+#Modificar un curso.
+p.agregarCurso('Matematicas')
+print(p.getCursos())
+p.modificarCurso('Matematicas', 'Ingles')
+print(p.getCursos())
 
+#Buscar un curso.
+p.buscarCurso('Ingles')
+p.buscarCurso('Fisica')
 
+#Consultar un curso por su posicion.
+p.consultarCurso(0)
