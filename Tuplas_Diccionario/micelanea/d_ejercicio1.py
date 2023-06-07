@@ -18,5 +18,5 @@ def clave(key, diccionario):
             
         return f"La palabra {key} esta asociada a  {l1} y es de tipo {l2}"
     else: 
-       return f"La clave {key} ni esta en el diccionario"
+       return f"La clave {key} no esta en el diccionario"
 print(clave(input("Escriba la clave a buscar: "), dicc))

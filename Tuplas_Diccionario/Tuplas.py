@@ -1,6 +1,6 @@
 import random
 
-from numpy import sort
+#from numpy import sort
 
 
 t=(10,'5',3,1,'sena',[])   #llenar tuplas
@@ -18,7 +18,7 @@ print(t[:2])
 print(t[2:])
 
 my_tuple = (11, 104, 10, 1000) 
-print(sort(my_tuple))
+#print(sort(my_tuple))
 #my_tuple.append(10000)    
 my_tuple=my_tuple+(100,)
 #del my_tuple[0]

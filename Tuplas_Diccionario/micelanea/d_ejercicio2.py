@@ -7,8 +7,8 @@ def agregar_d1(l1, clave, valor, diccionario):
     diccionario.update({clave:valor})
     while True:
         lis +=1
-        clave = input('Escriba la clave: ')
-        valor= input('Escriba un valor: ')
+        clave = input('Ingrese la clave: ')
+        valor= input('Ingrese un valor: ')
         diccionario.update({clave:valor})
         if lis == l1:
             break          
@@ -18,8 +18,8 @@ def agregar_d2(l2, clave, valor, diccionario):
     diccionario.update({clave:valor})
 
     for i in range(1, l2):
-        clave = input('Escriba la clave: ')
-        valor= input('Escriba un valor: ')
+        clave = input('Ingrese la clave: ')
+        valor= input('Ingrese un valor: ')
         diccionario.update({clave:valor})
     return True
 
@@ -28,7 +28,7 @@ def actualizar(diccionario):
     print('Diccionario:')
     for m1 in diccionario:
         claves = diccionario[m1]
-        print(f"{m1} --> {claves}") 
+        print(f"{m1} = {claves}") 
 
 print('Elija el diccionarios que desea llenar: ')
 print('1 o 2')
@@ -37,10 +37,10 @@ pregunta= int(input('Escriba la opcion que desea: '))
 
 match pregunta:
     case 1:
-        print('Escriba la palabra en español y su respectivo significado en ingles')
+        print('Debe escribir la palabra en español y su respectivo significado en ingles')
         agregar_d1(int(input('Cuantas veces quiere llenar el diccionario: ')), input('Escriba la clave: '), input('Escriba el valor: '),dic1)
         actualizar(dic1)
     case 2:
-        print('Escriba la palabra en ingles, y el significado en español')
+        print('Debe escribir la palabra en ingles y si respectivo significado en español')
         agregar_d2(int(input('Cuantas veces quiere llenar el diccionario: ')), input('Escriba la clave: '), input("Escriba el valor: "),dic2)
         actualizar(dic2)  

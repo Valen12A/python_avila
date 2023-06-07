@@ -11,5 +11,5 @@ def ani1(d1):
     return (tuplaEs, tuplaIn)
   
 tupla1, tupla2= ani1(d1)
-print ("La tupla en español son: ", tupla1)
+print ("La tupla en español es: ", tupla1)
 print ("La tupla y con los significados es: ", tupla2)
