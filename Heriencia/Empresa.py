@@ -24,3 +24,6 @@ class Empresa(Cliente):
 
     def getProducto(self):
         return self.__producto
+    
+    def getTodo2(self):
+        return f'{self.__identificador},{self.__tipo},{self.__nombre}, {self.__telefono},{self.__producto}'

@@ -32,5 +32,7 @@ class Individual(Cliente):
 
     def getProducto(self):
         return self.__producto
-    # def getTodo(self):
-    #     return print(self.__init__)
+    
+    def getTodo1(self):
+        return print(f'{self.__identificador},{self.__tipo},{self.__nombre}, {self.__correo}, {self.__telefono}, {self.__producto}')
+
