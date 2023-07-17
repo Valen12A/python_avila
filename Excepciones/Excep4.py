@@ -1,9 +1,7 @@
-dicc={'ciudad':'Bogota',
-     'continente':'Asia',
+dic={'ciudad':'Soacha',
+     'continente':'Africa',
      'planeta':'Marte',
      'pais':'España'}
-
-
 
 def clave(key, diccionario):
     if key  in diccionario:
@@ -11,8 +9,6 @@ def clave(key, diccionario):
         if key in diccionario:
             l1= diccionario [key]
 
-            
-        return f"La palabra {key} esta asociada a  {l1} y es de tipo {l2}"
     else: 
        return f"La clave {key} no esta en el diccionario"
-print(clave(input("Escriba la clave a buscar: "), dicc))
+print(clave(input("Escriba la clave a buscar: "), dic))
