@@ -69,3 +69,6 @@ for i in range(tam):
             aux=lista[i]
             lista[i]=lista[j]
             lista[j]=aux
+
+
+
