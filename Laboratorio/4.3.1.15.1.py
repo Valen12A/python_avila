@@ -19,6 +19,7 @@ try:
             for char in line:
 
                 if char.isalpha():
+
                     counters[char.lower()] += 1
 
                 elif char.isdigit():
