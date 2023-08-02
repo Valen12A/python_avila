@@ -1,4 +1,3 @@
-
 from os import strerror
 
 counters = {chr(ch): 0 for ch in range(ord('a'), ord('z') + 1)}
@@ -17,7 +16,7 @@ try:
         for line in file:
 
             for char in line:
-                
+
                 if char.isalpha():
 
                     counters[char.lower()] += 1
@@ -40,3 +39,5 @@ try:
 except IOError as e:
     print("Se produjo un error de E/S: ", strerror(e.errno))
 
+
+#C:\Users\avila\OneDrive\Documentos\VALENTINA\sena23\Trimestre  2\S\S\repositorio\pythonavila\Laboratorio\archivo.txt
