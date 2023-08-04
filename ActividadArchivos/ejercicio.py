@@ -1,7 +1,6 @@
 def buscarArchivo(archivo):
     try:
         file = open(archivo, "r")
-        print("El archivo ya exite")
         linea=file.readlines()
         numLineas=len(linea)
         print(f"El archivo tiene {numLineas} lineas")
@@ -16,7 +15,7 @@ def buscarArchivo(archivo):
     except FileNotFoundError:
         print(f'El archivo {archivo} no existe.')
 
-archivo = 'Archivo1.txt'
+archivo = 'ActividadArchivos\\Archivo1.txt'
 print(buscarArchivo(archivo))
 
 def agregarArchivo (archivo):
@@ -33,8 +32,8 @@ def agregarArchivo (archivo):
     except:
         print("Ha ocurrido un error")
 
-archivo = 'Archivo1.txt'
+archivo = 'ActividadArchivos\\Archivo1.txt'
 print(agregarArchivo(archivo))
 
-archivo = 'Archivo1.txt'
+archivo = 'ActividadArchivos\\Archivo1.txt'
 print(buscarArchivo(archivo))
