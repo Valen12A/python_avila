@@ -32,8 +32,8 @@ def agregarArchivo (archivo):
     except:
         print("Ha ocurrido un error")
 
-archivo = 'ActividadArchivos\\Archivo1.txt'
+archivo = 'ActividadArchivos\\tarea\\Archivo1.txt'
 print(agregarArchivo(archivo))
 
-archivo = 'ActividadArchivos\\Archivo1.txt'
+archivo = 'ActividadArchivos\\tarea\\Archivo1.txt'
 print(buscarArchivo(archivo))
